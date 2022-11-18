@@ -1,0 +1,37 @@
+.adv{
+    background: #2F5A62;
+}
+
+.adv__wrapper{
+    padding: 10px;
+}
+
+.adv__slider{
+    height: 19px;
+}
+
+.adv__slider .swiper-slide{
+    display: flex;
+}
+
+.adv__slider .swiper-slide a{
+    font-family: 'sofia-pro', sans-serif;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    margin-top: auto;
+    margin-bottom: auto;
+    @media(min-width: 768px){
+        font-size: 15px;
+    }
+}
+
+.adv__slider{
+    overflow: hidden;
+}

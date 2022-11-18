@@ -1,0 +1,79 @@
+.brands{
+    position: relative;
+    z-index: 2;
+    background-color: #bbd1c9;
+    padding-bottom: 30px;
+    @media(min-width: 100px){
+        padding-bottom: 62px;
+    }
+    .brands__slider{
+        @media(min-width: 1000px){
+            margin-top: 0px !important;
+            margin-bottom: 45px !important;
+        }
+    }
+    .brands__svg-text{
+        display: none;
+        @media(min-width: 1000px){
+            display: unset;
+            transform: rotate(-12deg);
+            textPath{
+                font-size: 32px;
+                text-align: center;
+                font-weight: 500;
+                font-family: 'Tiempos', serif;
+                color: #1f1c1d;
+            }
+        }
+    }
+    h3{
+        padding: 0 20px;
+        color: #2f5a62;
+        font-size: 22px;
+        font-family: 'Tiempos', 'serif';
+        text-align: center;
+        padding-top: 35px;
+        padding-bottom: 10px;
+        @media(min-width: 1000px){
+            display: none;
+        }
+    }
+
+    .brands__slider{
+        margin-top: 20px;
+        .swiper-slide{
+            display: flex;
+            min-height: 62px;
+            img{
+                margin-top: auto;
+                margin-bottom: auto;
+                max-width: 100%;
+                object-fit: contain;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+
+    @keyframes wavebrand {
+        0%{
+            left: 0;
+        }
+
+        100%{
+            left: -100%;
+        }
+    }
+
+    .brands__wave-img{
+        animation: wavebrand 5s forwards;
+        position: absolute;
+        top: -63px;
+        left: 0px;
+        width: 200%;
+        z-index: -1;
+        
+        
+        
+    }
+}

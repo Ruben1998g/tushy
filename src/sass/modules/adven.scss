@@ -1,0 +1,204 @@
+@keyframes wavebrandend {
+    0%{
+        left: 0;
+    }
+
+    100%{
+        left: -100%;
+    }
+}
+
+
+.adven{
+    position: relative;
+    z-index: 2;
+    background: #f3e9e2;
+    display: flex;
+    flex-direction: column;
+    .adven__wrapper{
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.adven__wave-img{
+    animation: wavebrandend 5s forwards;
+    position: absolute;
+    top: -23px;
+    left: 0px;
+    width: 200%;
+    z-index: -1;
+    @media(min-width: 1000px){
+        top: -62px;
+    }
+    
+}
+
+.adven__wrapper{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    ul{
+        li{
+            margin-bottom: 44px;
+            display: flex;
+            flex-direction: column;
+            .adven__bottom{
+                width: 100%;
+                display: flex;
+                img{
+                    width: 100%;
+                    max-width: 382px;
+                    object-fit: contain;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+            
+            .adven__top{
+                order: 1;
+                h2{
+                    font-size: 24px;
+                    font-family: "Tiempos", serif;
+                    font-weight: 500;
+                    line-height: 42px;
+                    text-align: center;
+                }
+                p{
+                    margin: 10px 0 20px;
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-family: 'SofiaPro', sans-serif;
+                    font-weight: 300;
+                    font-size: 16px;
+                    color: #1f1c1d;
+                    text-align: center;
+                }
+
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: auto;
+                    margin-right: auto;
+                    a.adven__top-first-link{
+                        background: #2F5A62;
+                        color: white;
+                        font-size: 16px;
+                        padding: 11px 26px;
+                        display: inline-block;
+                        border: 0;
+                        border-radius: 10px;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        font-weight: 300;
+                        letter-spacing: 3px;
+                        align-items: center;
+                        justify-content: space-around;
+                        padding: 14px 26px;
+                        cursor: pointer;
+                        text-align: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
+                    a.adven__top-second-link{
+                        padding: 16px 0 0 0;
+                        font-size: 16px;
+                        text-decoration: underline;
+                        color: #2F5A62;
+                        font-weight: 600;
+                        text-align: center;
+                    
+                    }
+                }
+            }
+        }
+    }
+    @media(min-width: 768px){
+        ul{
+            li{
+                flex-direction: row;
+                .adven__top{
+                    order: unset;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    
+                }
+                &:nth-child(even){
+                    .adven__top{
+                        order: 1;
+                        margin-left: 20px;
+                    } 
+                }
+
+                &:nth-child(odd){
+                    .adven__top{
+                        margin-right: 20px;
+                    } 
+                }
+
+                .adven__bottom{
+                    width: 50%;
+                    img{
+                        max-width: 98%;
+                    }
+                }
+
+                .adven__top{
+                    width: 50%;
+                    h2{
+                        font-family: "Tiempos", serif;
+                        font-weight: 500;
+                        font-size: 36px;
+                        line-height: 42px;
+                        text-align: left;
+                    }
+
+                    p{
+                        font-size: 22px;
+                        line-height: 32px;
+                        font-weight: 300;
+                        color: #1f1c1d;
+                        text-align: left;
+                    }
+                    div{
+                        display: flex;
+                        flex-direction: row;
+                        .adven__top-first-link{
+                            margin-left: 0px !important;
+                            margin-right: 30px !important;
+                            display: inline-block;
+                            border: 0;
+                            border-radius: 10px;
+                            font-size: 22px !important;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            font-weight: 300 !important;
+                            letter-spacing: 3px;
+                            align-items: center;
+                            justify-content: space-around;
+                            padding: 14px 26px !important;
+                            cursor: pointer;
+                            text-align: center;
+                        }   
+
+                        .adven__top-second-link{
+                            margin-left: 0px !important;
+                            margin-right: 0px !important;
+                            padding-left: 30px;
+                            text-decoration: underline;
+                            color: #2F5A62;
+                            font-size: 22px !important;
+                            font-weight: 600 !important;
+                        }
+                    }
+                }
+            }
+
+          
+        }
+    }
+}
+

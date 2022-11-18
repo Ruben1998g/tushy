@@ -1,0 +1,170 @@
+@keyframes topswave {
+    0%{
+        left: 0;
+    }
+
+    100%{
+        left: -100%;
+    }
+}
+
+.tops{
+    position: relative;
+    z-index: 2;
+}
+
+.tops__wave-img{
+    position: relative;
+}
+
+
+.tops__wave-img{
+    animation: topswave 5s forwards;
+    position: absolute;
+    top: -48px;
+    left: 0px;
+    width: 200%;
+    z-index: -1;
+    
+    
+    
+}
+
+.tops{
+    
+    margin-bottom: 70px;
+    h2{
+        padding-top: 35px;
+        font-size: 16px;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 300;
+        letter-spacing: 3px;
+        color: #1F1C1D;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        li{    
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            padding: 25px 25px 0 25px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            img{
+                width: 100%;
+                max-width: 425px;
+                object-fit: contain;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            h3{
+                letter-spacing: 0;
+                color: black;
+                margin: 0;
+                text-transform: uppercase;
+                font-size: 22px;
+                font-weight: 600;
+                line-height: 1.2;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            p{
+                color: #1f1c1d;
+                font-size: 16px;
+                margin-top: 5px;
+                margin-bottom: 0;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            a{
+                font-size: 22px;
+                font-weight: 300;
+                -webkit-font-smoothing: antialiased;
+                padding: 6px 40px 12px;
+                letter-spacing: 4px;
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                text-transform: uppercase;
+                cursor: pointer;
+                background: #2f5a62;
+                display: inline-block;
+                border: 2px solid #2f5a62;
+                border-radius: 10px;
+                margin-top: 20px;
+                align-self: center;
+                letter-spacing: 3px;
+                padding: 10px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+
+    @media(min-width: 768px){
+        margin-bottom: 90px;
+        .tops__wrapper{
+            display: flex;
+            flex-direction: column;
+        }
+        h2{
+            font-size: 26px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 300;
+            letter-spacing: 3px;
+            color: #1F1C1D;
+            margin-bottom: 50px;
+            padding-top: 80px;
+        }
+        ul{
+            margin-left: auto;
+            margin-right: auto;
+            flex-direction: row;
+            li{
+                box-sizing: content-box;
+                img{
+                    @media(min-width: 1000px){
+                        min-width: 380px;
+                    }
+                    max-width: 400px;
+                }
+                p{
+                    font-size: 22px;
+                    margin-top: 5px;
+                    margin-bottom: 0;
+                    text-align: center;
+                }
+                a{
+                    font-size: 22px;
+                    font-weight: 300;
+                    -webkit-font-smoothing: antialiased;
+                    padding: 6px 40px 12px;
+                    letter-spacing: 4px;
+                    color: white;
+                    text-align: center;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    background: #2f5a62;
+                    display: inline-block;
+                    border: 2px solid #2f5a62;
+                    border-radius: 10px;
+                    margin-top: 20px;
+                    align-self: center;
+                }
+            }
+        }
+    }
+}

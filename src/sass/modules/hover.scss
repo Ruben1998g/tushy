@@ -1,0 +1,9 @@
+.menu__cart-trigger,
+.footer__menu li a,
+.social__list li a,
+.links__wrapper li a{
+    &:hover,
+    &:focus{
+        opacity: 0.6;
+    }
+}

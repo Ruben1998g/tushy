@@ -1,0 +1,22 @@
+@keyframes wavegreen {
+    0%{
+        left: 0;
+    }
+
+    100%{
+        left: -100%;
+    }
+}
+
+.garanty{
+    position: relative;
+}
+
+.garanty__wave-img{
+    animation: wavegreen 5s forwards;
+    position: absolute;
+    top: -63px;
+    left: 0px;
+    width: 200%;
+    z-index: -1;
+}
